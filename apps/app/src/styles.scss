@@ -1,4 +1,4 @@
-@import "normalize.css";
+@import 'normalize.css';
 
 html {
   background: #f1f1f1;
@@ -20,4 +20,41 @@ mat-form-field {
   width: 100%;
 }
 
+.__navigation-wrapper {
+  margin-bottom: 24px;
+}
 
+.__navigation-link {
+  .mdc-button__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+      margin-right: 8px;
+    }
+  }
+}
+
+.__title {
+  padding-bottom: 24px;
+
+  font-size: 30px;
+  text-align: center;
+}
+
+.__wrap {
+  display: block;
+  max-width: 460px;
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0 auto;
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
+.__wrap-xl {
+  @extend .__wrap;
+  max-width: 640px;
+}
